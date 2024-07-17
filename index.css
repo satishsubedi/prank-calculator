@@ -1,0 +1,193 @@
+body {
+  margin: 0px;
+  background: rgb(135, 178, 7);
+}
+* {
+  box-sizing: border-box;
+}
+:root {
+  --shadow: 0 5px 5px 5px rgba(143, 143, 58, 0.562);
+}
+/* .wrapper {
+  margin: auto;
+  width: 80%;
+} */
+.main {
+  margin: auto;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: grey;
+  border-radius: 10px;
+  transform: perspective(70rem) rotateX(30deg);
+  animation: moving 1s;
+}
+.result {
+  background: green;
+  padding: 1rem;
+  margin: 0.5rem;
+  text-align: end;
+  color: white;
+}
+
+.keypad {
+  gap: 1rem;
+  margin: 0.5rem;
+  display: grid;
+  grid-template-areas: "ac c per div" "seven eight nine mul" "four five six minus" "one two three plus" "zero dot equalto equalto";
+}
+.ac {
+  grid-area: ac;
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.btn {
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.btn:hover {
+  cursor: pointer;
+  background: rgba(78, 135, 157, 0.824);
+}
+
+.c {
+  grid-area: c;
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.per {
+  grid-area: per;
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.div {
+  grid-area: div;
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.seven {
+  grid-area: seven;
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.eight {
+  grid-area: eight;
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.nine {
+  grid-area: nine;
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.mul {
+  grid-area: mul;
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.four {
+  grid-area: four;
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.five {
+  grid-area: five;
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.six {
+  grid-area: six;
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.minus {
+  grid-area: minus;
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.one {
+  grid-area: one;
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.two {
+  grid-area: two;
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.three {
+  grid-area: three;
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.plus {
+  grid-area: plus;
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.zero {
+  grid-area: zero;
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.dot {
+  grid-area: dot;
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.equalto {
+  grid-area: equalto;
+  background: yellow;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.prank {
+  background: red;
+  color: white;
+  animation: shake 0.5s;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes moving {
+  0% {
+    transform: perspective(10rem) rotateX(30deg);
+  }
+  100% {
+    transform: perspective(70rem) rotateX(30deg);
+  }
+}
